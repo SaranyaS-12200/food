@@ -1,38 +1,85 @@
 .App {
+  /* text-align: center; */
+}
+.title{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg{
+  
+  background-image: url(https://img.wallpapersafari.com/desktop/1440/900/26/92/0KH5pV.jpg);
+  background-position:center;
+  background-repeat: no-repeat;
+  width: 100%;
+  object-fit: cover;
+  text-align: center;
+  font-style: italic;
+  color: gainsboro;
+  font-size: 24px;
+  padding: 30px;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.food_container1{
+  width:340px;
+  height: min-content;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Food_poster{
+  width:340px;
+  height:500px;
+  object-fit: cover;
+}
+.Foodspace{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Food_name{
+  font-size: 24px;
+  margin:0;
+}
+.Food_rating{
+  font-size: 18px;
+}
+.Food_summary{
+  margin-top: 0;
+}
+.Food_list{
+  display:flex;
+  gap:16px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* margin-top: 25px; */
+}
+.Counter_container{
+  display: flex;
+  gap:10px;
+}
+.like_dislike{
+  font-size: 20px;
+}
+.Add_FoodForm{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap:10px;
+  margin: 16px;
 }
-
-.App-link {
-  color: #61dafb;
+.not-found{
+  text-align: center;
+  /* font-size: 54px; */
+  margin: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.notfound_space{
+  margin: 0px;
+  padding: 0px;
+}
+.notfound_img{
+  margin:0px;
+  padding: 0px;
+}
+.foodDetail_container1{
+  max-width: 900px;
+  padding:24px;
+}
+.FoodForm_heading{
+  text-align: center;
+  font-size: 35px;
 }
