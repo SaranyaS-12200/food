@@ -3,10 +3,20 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import IconButton from '@mui/material/IconButton';
 import EditIcon from '@mui/icons-material/Edit';
 import { useHistory } from "react-router-dom";
+import { useEffect,useState } from "react";
+import {InitialFood_list} from "./InitialFood_list";
+
 
 export function
-  FoodList({ Food_list, setFood_list }) {
-  const history = useHistory();
+  FoodList() {
+    // { Food_list, setFood_list }
+    const history = useHistory();
+    const [Food_list, setFood_list] = useState([]);//InitialFood_list
+    useEffect(()=>{ 
+      fetch("https://my-json-server.typicode.com/SaranyaS-12200/foodrecipedata/foodrecipeapp",{method : "GET"})
+      .then((data)=>data.json())
+      .then((data)=>setFood_list(data));
+    },[]);
   return (
     <div className='Food_list'>
       {Food_list.map(({ name, poster, rating, summary }, index) => {
@@ -19,6 +29,7 @@ export function
             summary={summary}
             deleteButton={
               <IconButton
+              style={{ marginLeft:"auto"}}
                 aria-label="delete"
                 color="error"
                 onClick={() => {

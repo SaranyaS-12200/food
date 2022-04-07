@@ -1,4 +1,5 @@
 export const InitialFood_list = [{
+  id:"100",
   name: "Rasamalai Sweet",
   poster: "https://www.ruchiskitchen.com/wp-content/uploads/2017/02/Rasmalai-recipe-2.jpg",
   rating: 5.0,
@@ -6,6 +7,7 @@ export const InitialFood_list = [{
   recipe_url: "https://www.youtube.com/embed/bjYNags0ONs"
 },
 {
+  id:"101",
   name: "Basundi Sweet",
   poster: "https://www.whiskaffair.com/wp-content/uploads/2021/08/Basundi-2-3.jpg",
   rating: 4.8,
@@ -13,6 +15,7 @@ export const InitialFood_list = [{
   recipe_url: "https://www.youtube.com/embed/-XhiYyEZsV0"
 },
 {
+  id:"102",
   name: "Halwa Sweet",
   poster: "https://5.imimg.com/data5/ANDROID/Default/2021/4/RO/EU/UK/66301162/prod-20210412-235353971899798281958864-jpg-500x500.jpg",
   rating: 4.5,
@@ -20,6 +23,7 @@ export const InitialFood_list = [{
   recipe_url: "https://www.youtube.com/embed/NgJCz7w7TrU"
 },
 {
+  id:"103",
   name: "Soan papdi",
   poster: "https://www.kailashsweets.com/upload/product/soan-papdi-20190415182030.jpg",
   rating: 3.9,
@@ -27,6 +31,7 @@ export const InitialFood_list = [{
   recipe_url: "https://www.youtube.com/embed/De_SSddiozc"
 },
 {
+  id:"104",
   name: "Vegetable Biryani",
   poster: "https://www.whiskaffair.com/wp-content/uploads/2020/08/Veg-Biryani-2-3-500x375.jpg",
   rating: 4.7,
@@ -35,6 +40,7 @@ export const InitialFood_list = [{
 
 },
 {
+  id:"105",
   name: "Vegetable Soup",
   poster: "https://www.archanaskitchen.com/images/archanaskitchen/World_Soups/Polish_Pearl_Barley_Millet_Vegetable_Soup_recipe.jpg",
   rating: 4.5,
@@ -42,6 +48,7 @@ export const InitialFood_list = [{
   recipe_url: "https://www.youtube.com/embed/QZSs_6XWhtE"
 },
 {
+  id:"106",
   name: "Naan PaneerButterMasala",
   poster: "https://www.ruchiskitchen.com/wp-content/uploads/2020/12/Paneer-Butter-Masala-9.jpg",
   rating: 4.9,
@@ -49,6 +56,7 @@ export const InitialFood_list = [{
   recipe_url: "https://www.youtube.com/embed/PdwpQBUSoCc"
 },
 {
+  id:"107",
   name: "Mixed Fried Rice(Non-veg)",
   poster: "https://rimthim.com/wp-content/uploads/2019/04/mixfried.jpg",
   rating: "4.0",
@@ -56,6 +64,7 @@ export const InitialFood_list = [{
   recipe_url: "https://www.youtube.com/embed/DlVLhL0-W7A"
 },
 {
+  id:"108",
   name: "Mutton Chukka",
   poster: "https://i.pinimg.com/originals/71/60/c4/7160c46fd5bb73adecb1fbc3b5e20a55.jpg",
   rating: 4.3,
@@ -63,6 +72,7 @@ export const InitialFood_list = [{
   recipe_url: "https://www.youtube.com/embed/Ze-wMRUIgF8"
 },
 {
+  id:"109",
   name: "Tandoori Chicken",
   poster: "https://www.cookingclassy.com/wp-content/uploads/2018/08/tandoori-chicken-11.jpg",
   rating: 4.4,
