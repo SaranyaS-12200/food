@@ -16,12 +16,8 @@ import { AddFood } from './AddFood';
 import { FoodDetails } from './FoodDetails';
 import { EditFood } from './EditFood';
 import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import Paper from '@mui/material/Paper';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
@@ -79,7 +75,7 @@ function App() {
                 <EditFood Food_list={Food_list} setFood_list={setFood_list} />
               </Route>
               <Route path="/foodfeast/:id">
-                <FoodDetails Food_list={Food_list} />
+                <FoodDetails/>
               </Route>
               <Route path="/foodfeast">
                 <FoodList  />

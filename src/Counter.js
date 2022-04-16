@@ -8,18 +8,20 @@ export function Counter() {
   useEffect(()=>{
     console.log("Like is update",like);
   },[like,dislike]);
+  const incrementlike=() => setLike(like + 1);
+  const incrementdislike=() => setDislike(dislike + 1);
   return (
     <div className='Counter_container'>
       <IconButton aria-label="Like Button "
         color="primary"
-        className="like_dislike" onClick={() => setLike(like + 1)}>
+        className="like_dislike" onClick={incrementlike}>
         <Badge badgeContent={like} color="primary">
           👍
         </Badge>
       </IconButton>
       <IconButton aria-label="Dislike Button"
         color="error"
-        className="like_dislike" onClick={() => setDislike(dislike + 1)}>
+        className="like_dislike" onClick={incrementdislike}>
         <Badge badgeContent={dislike} color="error">
           👎
         </Badge>

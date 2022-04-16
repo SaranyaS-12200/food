@@ -15,15 +15,15 @@ export function AddFood({ Food_list, setFood_list }) {
       <h1 className='FoodForm_heading'>Welcome to Food Festival!!!🥗🥤🍹🥪</h1>
       <h2 className='FoodForm_heading'>Add your "FAVORITE FOOD RECIPE😋😊 " and win the Festival!!!🎉🎊✨🎉</h2>
       <div className='Add_FoodForm'>
-        <TextField id="outlined-basic" label="FoodName:" variant="outlined"
+        <TextField id="outlined-basic" label="FoodName:" variant="outlined" value={foodname}
           onChange={(event) => setFoodname(event.target.value)} />
-        <TextField id="outlined-basic" label="FoodPoster" variant="outlined"
+        <TextField id="outlined-basic" label="FoodPoster" variant="outlined" value={foodposter}
           onChange={(event) => setFoodposter(event.target.value)} />
-        <TextField id="outlined-basic" label="FoodRecipe_video" variant="outlined"
+        <TextField id="outlined-basic" label="FoodRecipe_video" variant="outlined" value={foodrecipe_video}
           onChange={(event) => setFoodrecipe_video(event.target.value)} />
-        <TextField id="outlined-basic" label="FoodRating" variant="outlined"
+        <TextField id="outlined-basic" label="FoodRating" variant="outlined" value={foodrating}
           onChange={(event) => setFoodrating(event.target.value)} />
-        <TextField id="outlined-basic" label="FoodSummary" variant="outlined" onChange={(event) => setFoodsummary(event.target.value)} />
+        <TextField id="outlined-basic" label="FoodSummary" variant="outlined" value={foodsummary} onChange={(event) => setFoodsummary(event.target.value)} />
         <Button variant="contained"
           onClick={() => {
             console.log(foodname, foodposter, foodsummary, foodrating, foodrecipe_video);
@@ -35,8 +35,10 @@ export function AddFood({ Food_list, setFood_list }) {
               summary: foodsummary,
               recipe_url: foodrecipe_video
             };
-
-            setFood_list([...Food_list, newFood]);
+   
+            const copyFood_list=[...Food_list,newFood];
+            setFood_list(copyFood_list);
+            // setFood_list([...Food_list, newFood]);
             history.push("/foodfeast");
           }}
         >Add Food🧆</Button>
